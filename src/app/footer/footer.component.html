@@ -61,29 +61,29 @@
       <div class="col-md-9">
         <div class="row">
           <div class="col-md-12 my-4">
-            <h2>Contact Us</h2>
+            <h2>&nbsp;</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4">
+        <div class="row pt-3 text-center">
+          <!-- <div class="col-lg-4">
             <i class="fa fa-map-marker"></i>
             <p>
               Blockchain Research Lab, Admin Block, Ground Floor, Ajay Kumar
               Garg Engineering College, Ghaziabad, Uttar Pradesh India
             </p>
+          </div> -->
+          <div class="col-lg-4 px-5">
+            <i class="fa fa-phone pb-3"></i><br />
+            +91 882 672 7428<br />
+            +91 812 654 4009
           </div>
-          <div class="col-lg-3">
-            <i class="fa fa-phone"></i>
-            <p>+91 882 672 7428</p>
-            <p>+91 987 073 6616</p>
+          <div class="col-lg-4">
+            <i class="fa fa-clock-o pb-3"></i><br />
+            9:00am-5:00pm (Mon-Fri)<br />
+            Sat-Sun (Closed)
           </div>
-          <div class="col-lg-2">
-            <i class="fa fa-clock-o"></i>
-            <p>9:00am-5:00pm (Mon-Fri)</p>
-            <p>Sat-Sun (Closed)</p>
-          </div>
-          <div class="col-lg-3">
-            <i class="fa fa-envelope-o"></i>
+          <div class="col-lg-4">
+            <i class="fa fa-envelope-o pb-3"></i>
             <p>blockchain@akgec.ac.in</p>
           </div>
         </div>
@@ -91,18 +91,19 @@
     </div>
     <hr />
     <div class="line row">
-      <div class="col-md-6">
+      <div class="col-md-6 align-self-center">
         <p>
           <i class="fa fa-copyright" style="font-size: 15px;"></i> Blockchain
           Research Lab 2020.
         </p>
       </div>
 
-      <div class="icons col-md-6">
+      <div class="icons col-md-6 text-right">
         <a
           href="https://www.facebook.com/BlockchainResearchLab/?ref=br_rs"
           target="_blank"
-          ><i class="fa fa-facebook"></i
+        >
+          <i class="fa fa-facebook px-3"></i
         ></a>
         <a href="https://www.instagram.com/brl_akgec/" target="_blank"
           ><i class="fa fa-instagram"></i
@@ -183,7 +184,11 @@
                         formControlName="name"
                         required
                       />
-                      <small class="text-danger" *ngIf="fval.name.errors?.required && fval.name.touched">Name is Required</small>
+                      <small
+                        class="text-danger"
+                        *ngIf="fval.name.errors?.required && fval.name.touched"
+                        >Name is Required</small
+                      >
                     </div>
                   </div>
                   <!--Grid column-->
@@ -200,8 +205,18 @@
                         formControlName="email"
                         required
                       />
-                      <small class="text-danger" *ngIf="fval.email.errors?.required && fval.email.touched">Email is Required</small>
-                      <small class="text-danger" *ngIf="fval.email.errors?.email">Invalid Email Address</small>
+                      <small
+                        class="text-danger"
+                        *ngIf="
+                          fval.email.errors?.required && fval.email.touched
+                        "
+                        >Email is Required</small
+                      >
+                      <small
+                        class="text-danger"
+                        *ngIf="fval.email.errors?.email"
+                        >Invalid Email Address</small
+                      >
                     </div>
                   </div>
                   <!--Grid column-->
@@ -221,7 +236,13 @@
                         formControlName="subject"
                         required
                       />
-                      <small class="text-danger" *ngIf="fval.subject.errors?.required && fval.subject.touched">Subject Cannot be Empty</small>
+                      <small
+                        class="text-danger"
+                        *ngIf="
+                          fval.subject.errors?.required && fval.subject.touched
+                        "
+                        >Subject Cannot be Empty</small
+                      >
                     </div>
                   </div>
                 </div>
@@ -242,28 +263,40 @@
                         formControlName="body"
                         required
                       ></textarea>
-                      <small class="text-danger" *ngIf="fval.body.errors?.required && fval.body.touched">Kindly enter your Query!</small>
+                      <small
+                        class="text-danger"
+                        *ngIf="fval.body.errors?.required && fval.body.touched"
+                        >Kindly enter your Query!</small
+                      >
                     </div>
                   </div>
                 </div>
                 <!--Grid row-->
                 <p
-                class="text-justify w-responsive mx-auto mt-3"
-                style="font-size: small;"
-              >
-                Please do not hesitate to contact us directly. Our team will
-                come back to you within a matter of hours to help you.
-              </p>
-              <div class="status"></div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                  Close
-                </button>
-                <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">Send</button>
-              </div>
+                  class="text-justify w-responsive mx-auto mt-3"
+                  style="font-size: small;"
+                >
+                  Please do not hesitate to contact us directly. Our team will
+                  come back to you within a matter of hours to help you.
+                </p>
+                <div class="status"></div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    [disabled]="!contactForm.valid"
+                  >
+                    Send
+                  </button>
+                </div>
               </form>
-              
-              
             </div>
             <!--Grid column-->
           </div>
