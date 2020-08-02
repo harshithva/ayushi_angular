@@ -3,6 +3,8 @@ import { FormBuilder, Validators, FormGroupDirective, NgForm } from "@angular/fo
 import { ContactUsService } from './contactus.service'
 declare var $ :any;
 
+
+
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -48,6 +50,5 @@ export class FooterComponent implements OnInit {
       }
     )
   }
-}
-
+  }
 }

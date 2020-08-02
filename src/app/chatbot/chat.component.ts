@@ -45,7 +45,7 @@ export class ChatComponent implements OnInit {
         $.ajax({
           type: "POST",
           contentType: "application/json",
-          url: "https://brl-app.herokuapp.com",
+          url: "https://brl-apis.herokuapp.com/chatty/",
           data: JSON.stringify({ response: msg }),
         })
           .done(function (data) {
