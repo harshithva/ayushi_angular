@@ -14,6 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { StrategyComponent } from './strategy/strategy.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TeamComponent } from './team/team.component';
+import { HomeComponent } from './home/home.component'
 import { ChatComponent } from './chatbot/chat.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
@@ -33,6 +34,7 @@ import { HttpClientModule} from '@angular/common/http';
     StrategyComponent,
     PortfolioComponent,
     ChatComponent,
+    HomeComponent
   ],
   imports: [BrowserModule, AppRoutingModule,FormsModule,
     HttpClientModule,
