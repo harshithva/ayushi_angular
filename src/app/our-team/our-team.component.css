@@ -1,0 +1,80 @@
+/* css for nav part */
+* {
+  font-family: arial;
+}
+.navbar {
+  background-color: white;
+}
+.nav-item a {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #000000;
+  border-bottom: 3px solid white;
+  margin: 10px;
+  opacity: 0.6;
+}
+
+.nav-item a:hover {
+  background-color: white;
+  color: #1479b4;
+  border-bottom: 3px solid #1788cb;
+  transition: 0.2s;
+}
+/* css for team part */
+.ovl .fa:hover{
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+
+.ovl{
+  text-align: center;
+  padding: 60px;
+}
+
+
+.gallery1-box{
+  position: relative;
+  margin-bottom: 30px;
+
+  border-radius: 100px;
+}
+.card-tex{
+  font-size: 10px;
+}
+
+.team{
+  padding: 80px;
+    margin-bottom: -100px;
+}
+
+.team .fa{
+  color: white;
+  padding: 7px;
+  font-size:20px;
+}
+
+
+.team h1{
+  text-align: center;
+ margin-top: -50px;
+ color:#2788cc;
+}
+
+
+.ovl{
+  opacity: 0;
+  transition: 1s;
+
+}
+.ovl:hover {
+opacity: 1;
+background: rgba(0,0,0,0.6);
+transition: 1s;
+}
+
+
+
+
