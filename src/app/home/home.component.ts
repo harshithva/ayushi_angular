@@ -13,8 +13,5 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  ngAfterViewInit(){
-    let loader = this.renderer.selectRootElement('#loader__main');
-    this.renderer.setStyle(loader, 'display', 'none');
-  }
+
 }

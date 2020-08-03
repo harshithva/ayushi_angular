@@ -1,0 +1,44 @@
+.row{
+    overflow: hidden;
+}
+
+h3{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+}
+
+@media (min-width: 544px) {
+    img{
+        height:200px;
+        width:350px;
+        border-radius: 5px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    img{
+        height:225px;
+        width:425px;
+        border-radius: 5px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    img{
+        height:275px;
+        width:475px;
+        border-radius: 5px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    img{
+        height:350px;
+        width:550px;
+        border-radius: 5px;
+    }
+  }
+

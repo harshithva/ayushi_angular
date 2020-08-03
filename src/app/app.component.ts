@@ -15,5 +15,10 @@ export class AppComponent {
     AOS.init();
   }
 
+  ngAfterViewInit(){
+    let loader = this.renderer.selectRootElement('#loader__main');
+    this.renderer.setStyle(loader, 'display', 'none');
+  }
+
 
 }

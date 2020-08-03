@@ -19,6 +19,7 @@ import { ChatComponent } from './chatbot/chat.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { OurTeamComponent } from './our-team/our-team.component';
+import { PortfolioPageComponent } from './portfolio-page/portfolio-page.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,9 @@ import { OurTeamComponent } from './our-team/our-team.component';
     PortfolioComponent,
     ChatComponent,
     HomeComponent,
-    OurTeamComponent
+    OurTeamComponent,
+    PortfolioPageComponent
+    
   ],
   imports: [BrowserModule, AppRoutingModule,FormsModule,
     HttpClientModule,
