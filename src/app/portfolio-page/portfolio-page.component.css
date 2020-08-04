@@ -16,10 +16,47 @@ img{
     border-radius: 5px;
 }
 
+#app_image{
+    height: 78%;
+    width: 60%;
+    border-radius: 5px;
+}
+
+#app_img_col{
+    height: fit-content;
+}
+
+@media(max-width:768px){
+    #app_image{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+
+@media(min-width:864px){
+    #app_image{
+        height: 476px;
+        width: 51%;
+        border-radius: 5px;
+    }
+}
+
 @media(min-width: 1276px){
     img{
         height:100%;
         width:82%;
         border-radius: 5px;
     }
+
+    #app_image{
+        height: 576px;
+        width: 51%;
+        border-radius: 5px;
+    }
+    #app_text{
+        padding-top: 12% !important;
+    }
+
 }
+
