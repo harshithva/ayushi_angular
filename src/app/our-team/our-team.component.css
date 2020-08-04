@@ -1,80 +1,76 @@
-/* css for nav part */
-* {
-  font-family: arial;
-}
-.navbar {
-  background-color: white;
-}
-.nav-item a {
-  text-align: left;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 0px;
-  color: #000000;
-  border-bottom: 3px solid white;
-  margin: 10px;
-  opacity: 0.6;
-}
 
-.nav-item a:hover {
-  background-color: white;
-  color: #1479b4;
-  border-bottom: 3px solid #1788cb;
-  transition: 0.2s;
+.disc{
+  justify-content: center;
+  margin: 80px 0px;
+  text-align: center;
+  font-weight: bolder;
+  color:#2788cc;
 }
-/* css for team part */
-.ovl .fa:hover{
-  transform: scale(1.5);
+section{
+  margin-bottom: 150px;
+}
+a{
+  color: white;
+}
+.fa{
+  margin: 5px;
+  padding: 3px;
+  border-radius: 50%;
   transition: 0.5s;
 }
-
-
-.ovl{
-  text-align: center;
-  padding: 60px;
+.fa:hover{
+  background-color: white;
+  color:#2788cc;
 }
-
-
-.gallery1-box{
-  position: relative;
-  margin-bottom: 30px;
-
-  border-radius: 100px;
-}
-.card-tex{
-  font-size: 10px;
-}
-
-.team{
-  padding: 80px;
-    margin-bottom: -100px;
-}
-
-.team .fa{
-  color: white;
-  padding: 7px;
-  font-size:20px;
-}
-
-
-.team h1{
-  text-align: center;
- margin-top: -50px;
- color:#2788cc;
-}
-
-
-.ovl{
-  opacity: 0;
-  transition: 1s;
-
-}
-.ovl:hover {
-opacity: 1;
-background: rgba(0,0,0,0.6);
-transition: 1s;
-}
-
-
-
-
+.card1 {
+  justify-self: center;
+  width: 160px;
+  height: 160px;
+  transform-style: preserve-3d;
+  perspective: 300px;
+  transition: 0.5s;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 15px 10px;
+  display: inline-flex;
+ align-content: center;
+ }
+ .card1 .front {
+   border-radius: 10px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height:100%;
+   background: #000;
+   backface-visibility: hidden;
+   transform: rotateY(0deg);
+   transition: 0.5s;
+ }
+ .card1:hover .front{
+   transform: rotateY(-180deg);
+ }
+ .card1 .back {
+   border-radius: 10px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height:100%;
+   background-image: radial-gradient( circle 465px at -15.1% -25%,  rgba(17,130,193,1) 0%, rgba(67,166,238,1) 49%, rgba(126,203,244,1) 90.2% );   color: white;
+   transform: rotateY(180deg);
+   transition: 0.5s;
+   border: 1px solid #2788cc;
+   text-align: center;
+   vertical-align: center;
+ }
+ .card1:hover .back {
+   transform: rotateY(0deg);
+ }
+ .details{
+   z-index: 20;
+   zoom: initial;
+ }
+ img{
+   border-radius: 10px;
+ }
