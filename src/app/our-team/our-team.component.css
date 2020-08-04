@@ -64,8 +64,9 @@ a{
    transform: rotateY(180deg);
    transition: 0.5s;
    border: 1px solid #2788cc;
-   text-align: center;
-   vertical-align: middle;
+   display:flex;
+   align-items: center;
+   justify-content: center;
  }
  .card1:hover .back {
    transform: rotateY(0deg);
