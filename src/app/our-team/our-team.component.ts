@@ -1,3 +1,5 @@
+import { Comments } from './../comments';
+import { ApiService } from './../api.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,11 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OurTeamComponent implements OnInit {
 
-  constructor() { }
+  constructor(private apiService: ApiService) { }
+  results: Comments[];
 
-  ngOnInit() {
+  ngOnInit(): void {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+    this.apiService.getcomments()
+    .subscribe(
+      data => {
+        this.results = data.data;
+        console.log(this.results);
+      }
+    );
   }
 
 }

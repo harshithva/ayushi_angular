@@ -34,6 +34,9 @@ a{
   margin: 15px 10px;
   display: inline-flex;
  align-content: center;
+ align-items: center;
+ padding: 4px;
+ text-align: center;
  }
  .card1 .front {
    border-radius: 10px;
@@ -62,7 +65,7 @@ a{
    transition: 0.5s;
    border: 1px solid #2788cc;
    text-align: center;
-   vertical-align: center;
+   vertical-align: middle;
  }
  .card1:hover .back {
    transform: rotateY(0deg);
@@ -70,6 +73,9 @@ a{
  .details{
    z-index: 20;
    zoom: initial;
+   vertical-align: middle;
+   text-align: center;
+   padding: 4px;
  }
  img{
    border-radius: 10px;
