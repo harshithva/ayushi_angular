@@ -14,17 +14,20 @@
             <span>{{ com.Tech }}</span>
           </h6>
           <div class="icons">
-            <a href="{{ com.Facebook }}" target="_blank"
+            <a  *ngIf="com.Facebook"href="{{ com.Facebook }}" target="_blank"
               ><div class="fa fa-facebook"></div
             ></a>
-            <a href="{{ com.Insta }}" target="_blank"
+            <a *ngIf="com.Insta" href="{{ com.Insta }}" target="_blank"
               ><div class="fa fa-instagram"></div
             ></a>
-            <a href="{{ com.Linkedin }}" target="_blank"
+            <a *ngIf="com.Linkedin" href="{{ com.Linkedin }}" target="_blank"
               ><div class="fa fa-linkedin"></div
             ></a>
-            <a href="{{ com.Github }}" target="_blank"
+            <a *ngIf="com.Github"href="{{ com.Github }}" target="_blank"
               ><div class="fa fa-github"></div
+            ></a>
+            <a *ngIf="com.Behance"href="{{ com.Behance }}" target="_blank"
+              ><div class="fa fa-behance"></div
             ></a>
           </div>
         </div>
