@@ -90,7 +90,7 @@
       </div>
     </div>
     <hr />
-    <div class="line row">
+    <div class="line row" style="align-items: center;">
       <div class="col-md-6">
         <p>
           <i class="fa fa-copyright" style="font-size: 15px;"></i> Blockchain
@@ -98,11 +98,11 @@
         </p>
       </div>
 
-      <div class="icons col-md-6">
+      <div class="icons col-md-6" style="text-align-last: right;">
         <a
           href="https://www.facebook.com/BlockchainResearchLab/?ref=br_rs"
           target="_blank"
-          ><i class="fa fa-facebook"></i
+          ><i class="fa fa-facebook" style="width: 3rem;"></i
         ></a>
         <a href="https://www.instagram.com/brl_akgec/" target="_blank"
           ><i class="fa fa-instagram"></i
@@ -183,7 +183,11 @@
                         formControlName="name"
                         required
                       />
-                      <small class="text-danger" *ngIf="fval.name.errors?.required && fval.name.touched">Name is Required</small>
+                      <small
+                        class="text-danger"
+                        *ngIf="fval.name.errors?.required && fval.name.touched"
+                        >Name is Required</small
+                      >
                     </div>
                   </div>
                   <!--Grid column-->
@@ -200,8 +204,18 @@
                         formControlName="email"
                         required
                       />
-                      <small class="text-danger" *ngIf="fval.email.errors?.required && fval.email.touched">Email is Required</small>
-                      <small class="text-danger" *ngIf="fval.email.errors?.email">Invalid Email Address</small>
+                      <small
+                        class="text-danger"
+                        *ngIf="
+                          fval.email.errors?.required && fval.email.touched
+                        "
+                        >Email is Required</small
+                      >
+                      <small
+                        class="text-danger"
+                        *ngIf="fval.email.errors?.email"
+                        >Invalid Email Address</small
+                      >
                     </div>
                   </div>
                   <!--Grid column-->
@@ -221,7 +235,13 @@
                         formControlName="subject"
                         required
                       />
-                      <small class="text-danger" *ngIf="fval.subject.errors?.required && fval.subject.touched">Subject Cannot be Empty</small>
+                      <small
+                        class="text-danger"
+                        *ngIf="
+                          fval.subject.errors?.required && fval.subject.touched
+                        "
+                        >Subject Cannot be Empty</small
+                      >
                     </div>
                   </div>
                 </div>
@@ -242,28 +262,40 @@
                         formControlName="body"
                         required
                       ></textarea>
-                      <small class="text-danger" *ngIf="fval.body.errors?.required && fval.body.touched">Kindly enter your Query!</small>
+                      <small
+                        class="text-danger"
+                        *ngIf="fval.body.errors?.required && fval.body.touched"
+                        >Kindly enter your Query!</small
+                      >
                     </div>
                   </div>
                 </div>
                 <!--Grid row-->
                 <p
-                class="text-justify w-responsive mx-auto mt-3"
-                style="font-size: small;"
-              >
-                Please do not hesitate to contact us directly. Our team will
-                come back to you within a matter of hours to help you.
-              </p>
-              <div class="status"></div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                  Close
-                </button>
-                <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">Send</button>
-              </div>
+                  class="text-justify w-responsive mx-auto mt-3"
+                  style="font-size: small;"
+                >
+                  Please do not hesitate to contact us directly. Our team will
+                  come back to you within a matter of hours to help you.
+                </p>
+                <div class="status"></div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    [disabled]="!contactForm.valid"
+                  >
+                    Send
+                  </button>
+                </div>
               </form>
-              
-              
             </div>
             <!--Grid column-->
           </div>
