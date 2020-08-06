@@ -59,6 +59,7 @@ a{
    display:flex;
    align-items: center;
    justify-content: center;
+   backface-visibility: hidden;
  }
  .card1:hover .back {
    transform: rotateY(0deg);
