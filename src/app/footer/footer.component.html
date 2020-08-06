@@ -248,7 +248,7 @@
                 <!--Grid row-->
 
                 <!--Grid row-->
-                <div class="row">
+                <div class="row mb-3">
                   <!--Grid column-->
                   <div class="col-md-12">
                     <div class="md-form">
@@ -271,6 +271,14 @@
                   </div>
                 </div>
                 <!--Grid row-->
+                <div style="text-align: -webkit-center;">
+                  <re-captcha
+                    (resolved)="resolved($event)"
+                    formControlName="recaptchaReactive"
+                    siteKey="6LcsZbsZAAAAAMuahf8xNowvq0ds90IXtUMtgymH"
+                  >
+                  </re-captcha>
+                </div>
                 <p
                   class="text-justify w-responsive mx-auto mt-3"
                   style="font-size: small;"

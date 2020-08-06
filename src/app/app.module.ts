@@ -1,25 +1,26 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { RecaptchaModule, RecaptchaFormsModule } from "ng-recaptcha";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { NavComponent } from './nav/nav.component';
-import { FoundersComponent } from './founders/founders.component';
-import { BlogComponent } from './blog/blog.component';
-import { ClientsComponent } from './clients/clients.component';
-import { LandingComponent } from './landing/landing.component';
-import { FooterComponent } from './footer/footer.component';
-import { SkillsComponent } from './skills/skills.component';
-import { AboutComponent } from './about/about.component';
-import { StrategyComponent } from './strategy/strategy.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { TeamComponent } from './team/team.component';
-import { HomeComponent } from './home/home.component'
-import { ChatComponent } from './chatbot/chat.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule} from '@angular/common/http';
-import { OurTeamComponent } from './our-team/our-team.component';
-import { PortfolioPageComponent } from './portfolio-page/portfolio-page.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { NavComponent } from "./nav/nav.component";
+import { FoundersComponent } from "./founders/founders.component";
+import { BlogComponent } from "./blog/blog.component";
+import { ClientsComponent } from "./clients/clients.component";
+import { LandingComponent } from "./landing/landing.component";
+import { FooterComponent } from "./footer/footer.component";
+import { SkillsComponent } from "./skills/skills.component";
+import { AboutComponent } from "./about/about.component";
+import { StrategyComponent } from "./strategy/strategy.component";
+import { PortfolioComponent } from "./portfolio/portfolio.component";
+import { TeamComponent } from "./team/team.component";
+import { HomeComponent } from "./home/home.component";
+import { ChatComponent } from "./chatbot/chat.component";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
+import { OurTeamComponent } from "./our-team/our-team.component";
+import { PortfolioPageComponent } from "./portfolio-page/portfolio-page.component";
 
 @NgModule({
   declarations: [
@@ -38,12 +39,17 @@ import { PortfolioPageComponent } from './portfolio-page/portfolio-page.componen
     ChatComponent,
     HomeComponent,
     OurTeamComponent,
-    PortfolioPageComponent
-    
+    PortfolioPageComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule,FormsModule,
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
     HttpClientModule,
-    ReactiveFormsModule,],
+    ReactiveFormsModule,
+    RecaptchaModule,
+    RecaptchaFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
