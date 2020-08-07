@@ -259,12 +259,12 @@
                         name="message"
                         rows="2"
                         class="form-control md-textarea"
-                        formControlName="body"
+                        formControlName="message"
                         required
                       ></textarea>
                       <small
                         class="text-danger"
-                        *ngIf="fval.body.errors?.required && fval.body.touched"
+                        *ngIf="fval.message.errors?.required && fval.message.touched"
                         >Kindly enter your Query!</small
                       >
                     </div>

@@ -6,7 +6,7 @@ import { HttpClient } from "@angular/common/http";
 })
 export class ContactUsService {
   data = "any";
-  _url = "https://brl-apis.herokuapp.com/send-mail/";
+  _url = "https://brl-apis.herokuapp.com/contact-us/";
   constructor(private _http: HttpClient) {}
 
   register(data) {
