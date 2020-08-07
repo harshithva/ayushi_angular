@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from "@angular/core";
 import {
   FormBuilder,
@@ -16,10 +17,12 @@ declare var $: any;
 export class FooterComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
-    private _contactService: ContactUsService
+    private _contactService: ContactUsService,
+    private router: Router
   ) {}
-
+webVal=1;
   contactForm = this.fb.group({
+    web: [this.webVal],
     name: ["", [Validators.required]],
     email: ["", [Validators.required, Validators.email]],
     subject: ["", [Validators.required]],
@@ -50,6 +53,7 @@ export class FooterComponent implements OnInit {
       this._contactService.register(this.contactForm.value).subscribe(
         (success) => {
           console.log("Form Submitted");
+          console.log(success);
           form.resetForm();
           $("#contactUs").modal("hide");
         },

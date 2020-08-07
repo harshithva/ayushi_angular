@@ -264,7 +264,9 @@
                       ></textarea>
                       <small
                         class="text-danger"
-                        *ngIf="fval.message.errors?.required && fval.message.touched"
+                        *ngIf="
+                          fval.message.errors?.required && fval.message.touched
+                        "
                         >Kindly enter your Query!</small
                       >
                     </div>
