@@ -1,0 +1,11 @@
+@media only screen and (max-width: 768px) {
+  #text {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: auto;
+  }
+  #circle {
+    margin: auto;
+  }
+}
