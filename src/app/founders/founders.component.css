@@ -95,8 +95,8 @@
 p {
   font-size: small;
 }
-h2 {
-  padding-top: 4px;
+h3 {
+  padding-top: 8px;
 }
 .btn:hover{
   transform: scale(1.05);
