@@ -25,5 +25,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: roboto;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+p,
+a,
+button,
+label {
+  font-family: "Lato", sans-serif;
 }
