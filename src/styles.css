@@ -31,6 +31,7 @@ h6 {
 p,
 a,
 button,
-label {
+label,
+span {
   font-family: "Lato", sans-serif;
 }
