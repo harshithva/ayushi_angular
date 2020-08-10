@@ -21,7 +21,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { OurTeamComponent } from "./our-team/our-team.component";
 import { PortfolioPageComponent } from "./portfolio-page/portfolio-page.component";
-
+import { RegistrationPageComponent } from "./registration-page/registration-page.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +36,7 @@ import { PortfolioPageComponent } from "./portfolio-page/portfolio-page.componen
     AboutComponent,
     StrategyComponent,
     PortfolioComponent,
+    RegistrationPageComponent,
     ChatComponent,
     HomeComponent,
     OurTeamComponent,
