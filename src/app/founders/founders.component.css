@@ -77,7 +77,6 @@
   display: inline-block;
   background: #4a89cd;
   font-family: helvetica;
-  padding: 0.5em 1em;
   color: white;
   text-decoration: none;
   font-weight: bolder;
@@ -98,7 +97,7 @@ p {
 h3 {
   padding-top: 8px;
 }
-.btn:hover{
+.btn:hover {
   transform: scale(1.05);
   transition: 0.5s;
 }
