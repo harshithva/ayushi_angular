@@ -6,7 +6,7 @@
       position: absolute;
       margin-top: -2rem;
       margin-left: -2rem;
-      height: 600vh !important;
+      height: 200vh !important;
       z-index: -1;
     "
     class="w-100 header-particles"
@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 py-2">
         <img
           src="../../assets/poster.jpg"
           style="
@@ -30,12 +30,24 @@
           "
         />
       </div>
-      <div>
-        <form class="form-ex" [formGroup]="userprofileForms" (ngSubmit)="onSubmit()">
-
+      <div
+        class="col-md-6 align-self-center py-2"
+        style="backdrop-filter: blur(5px); text-align-last: center;"
+      >
+        <form
+          class="form-ex"
+          [formGroup]="userprofileForms"
+          (ngSubmit)="onSubmit()"
+        >
           <mat-form-field appearance="outline" class="example-full-width">
             <mat-label>Name</mat-label>
-            <input matInput required type="text" formControlName="name"  autocomplete="off">
+            <input
+              matInput
+              required
+              type="text"
+              formControlName="name"
+              autocomplete="off"
+            />
           </mat-form-field>
           <mat-form-field appearance="outline" class="example-full-width">
             <mat-label>BRANCH</mat-label>
@@ -48,52 +60,70 @@
               <mat-option value="OTHER">OTHER</mat-option>
             </mat-select>
           </mat-form-field>
-
-          <BR>
-
-
+          <br />
           <mat-form-field appearance="outline" class="example-full-width">
             <mat-label>Roll No</mat-label>
-            <input matInput required type="number" formControlName="rollNumber"  autocomplete="off">
+            <input
+              matInput
+              required
+              type="number"
+              formControlName="rollNumber"
+              autocomplete="off"
+            />
           </mat-form-field>
           <mat-form-field appearance="outline" class="example-full-width">
             <mat-label>Student No.</mat-label>
-            <input matInput required type="number" formControlName="studentNumber">
+            <input
+              matInput
+              required
+              type="number"
+              formControlName="studentNumber"
+            />
           </mat-form-field>
-
-          <br>
-
-
+          <br />
           <mat-form-field appearance="outline" class="example-full-width">
             <mat-label>Email</mat-label>
-            <input matInput required type="email" formControlName="email" autocomplete="off">
+            <input
+              matInput
+              required
+              type="email"
+              formControlName="email"
+              autocomplete="off"
+            />
           </mat-form-field>
           <mat-form-field appearance="outline" class="example-full-width">
             <mat-label>Skills</mat-label>
-            <input matInput required type="text" formControlName="skills">
+            <input matInput required type="text" formControlName="skills" />
           </mat-form-field>
-
-          <br>
-
+          <br />
           <mat-form-field appearance="outline" class="example-full-width">
             <mat-label>Phone No.</mat-label>
-            <input matInput required type="number" formControlName="phoneNumber">
+            <input
+              matInput
+              required
+              type="number"
+              formControlName="phoneNumber"
+            />
           </mat-form-field>
           <mat-form-field appearance="outline" class="example-full-width">
             <mat-label>Whatsapp No.</mat-label>
-            <input matInput required type="number" formControlName="whatsappNumber">
+            <input
+              matInput
+              required
+              type="number"
+              formControlName="whatsappNumber"
+            />
           </mat-form-field>
-
-          <br>
+          <br />
           <mat-form-field appearance="outline" class="example-full-width">
             <mat-label>Behance link</mat-label>
-            <input matInput type="text" formControlName="behance">
+            <input matInput type="text" formControlName="behance" />
           </mat-form-field>
           <mat-form-field appearance="outline" class="example-full-width">
             <mat-label>Github Link</mat-label>
-            <input matInput type="text" formControlName="github">
+            <input matInput type="text" formControlName="github" />
           </mat-form-field>
-          <br>
+          <br />
           <div style="text-align: -webkit-center;">
             <re-captcha
               (resolved)="resolved($event)"
@@ -102,11 +132,14 @@
             >
             </re-captcha>
           </div>
-          <br>
-
-          <button  class="btn btn-primary align-self-center" type="submit"style="self-align: -webkit-center;">SUBMIT</button>
-
-
+          <br />
+          <button
+            class="btn btn-primary align-self-center"
+            type="submit"
+            style="align-self: -webkit-center;"
+          >
+            SUBMIT
+          </button>
         </form>
       </div>
     </div>
