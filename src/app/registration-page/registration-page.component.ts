@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { ContactUsService } from './../footer/contactus.service';
 import { Component, OnInit } from '@angular/core';
 import { ParticlesConfig } from '../landing/particles';
@@ -13,6 +14,7 @@ declare var particlesJS: any;
 export class RegistrationPageComponent implements OnInit {
 
   constructor(    private _contactService: ContactUsService,
+                  private router: Router,
     ) { }
   userprofileForms = new FormGroup({
     name: new FormControl('', Validators.pattern('^[a-zA-Z]*$')),
@@ -23,8 +25,8 @@ export class RegistrationPageComponent implements OnInit {
     whatsappNumber: new FormControl('', Validators.pattern('^[0-9]*$')),
     email: new FormControl('', Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$')),
     skills: new FormControl('', Validators.required),
-    github: new FormControl('', Validators.required),
-    behance: new FormControl('', Validators.required),
+    github: new FormControl('', ),
+    behance: new FormControl('', ),
     recaptchaReactive: new FormControl('${captchaResponse}', Validators.required),
   });
 
@@ -41,15 +43,19 @@ export class RegistrationPageComponent implements OnInit {
 
   onSubmit() {
     console.log(this.userprofileForms.value);
+
     if (this.userprofileForms.valid) {
       this._contactService.registration(this.userprofileForms.value).subscribe(
         (success) => {
           console.log("Form Submitted");
           console.log(success);
+          window.alert("Form submitted successfully");
           this.userprofileForms.reset();
+          this.router.navigate(['/', 'register']);
         },
         (error) => {
-          console.log("Error sending data!");
+          console.log(error);
+          window.alert("Some error occured. Please try again later.")
         }
       );
     }
