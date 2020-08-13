@@ -1,3 +1,4 @@
+import { Router } from "@angular/router";
 import { ContactUsService } from "./../footer/contactus.service";
 import { Component, OnInit } from "@angular/core";
 import { ParticlesConfig } from "../landing/particles";
@@ -11,9 +12,12 @@ declare var particlesJS: any;
   styleUrls: ["./registration-page.component.css"],
 })
 export class RegistrationPageComponent implements OnInit {
-  constructor(private _contactService: ContactUsService) {}
+  constructor(
+    private _contactService: ContactUsService,
+    private router: Router
+  ) {}
   userprofileForms = new FormGroup({
-    name: new FormControl("", Validators.pattern("^[a-zA-Z]*$")),
+    name: new FormControl("", Validators.pattern("^[a-zA-Z ]*$")),
     phoneNumber: new FormControl("", Validators.pattern("^[0-9]*$")),
     rollNumber: new FormControl("", Validators.required),
     branch: new FormControl("", Validators.required),
@@ -24,8 +28,8 @@ export class RegistrationPageComponent implements OnInit {
       Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$")
     ),
     skills: new FormControl("", Validators.required),
-    github: new FormControl("", Validators.required),
-    behance: new FormControl("", Validators.required),
+    github: new FormControl(""),
+    behance: new FormControl(""),
     recaptchaReactive: new FormControl(
       "${captchaResponse}",
       Validators.required
@@ -49,14 +53,16 @@ export class RegistrationPageComponent implements OnInit {
       this._contactService.registration(this.userprofileForms.value).subscribe(
         (success) => {
           if (success.status == 1) {
-            alert("Success!");
-            window.location.href = "./";
+            window.alert("Form submitted successfully");
+            this.router.navigate(["/", "register"]);
           } else {
-            alert(success.msg);
+            window.alert(success.error);
+            this.userprofileForms.reset();
           }
         },
         (error) => {
-          console.log("Error sending data!");
+          console.log(error);
+          window.alert("Some error occured. Please try again later.");
         }
       );
     }
