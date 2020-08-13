@@ -21,8 +21,94 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6">saidjvasdjfnds</div>
-      <div class="col-md-6">sdasdgsd</div>
+      <div class="col-md-6">
+        <img
+          src="../../assets/poster.jpg"
+          style="
+            width: inherit;
+            box-shadow: 0 4px 8px 0 #fff, 0 6px 10px 0 #000;
+          "
+        />
+      </div>
+      <div>
+        <form class="form-ex" [formGroup]="userprofileForms" (ngSubmit)="onSubmit()">
+
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>Name</mat-label>
+            <input matInput required type="text" formControlName="name"  autocomplete="off">
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>BRANCH</mat-label>
+            <mat-select formControlName="branch">
+              <mat-option value="CS">CS</mat-option>
+              <mat-option value="CSE">CSE</mat-option>
+              <mat-option value="IT">IT</mat-option>
+              <mat-option value="CS/IT">CS/IT</mat-option>
+              <mat-option value="ECE">ECE</mat-option>
+              <mat-option value="OTHER">OTHER</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <BR>
+
+
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>Roll No</mat-label>
+            <input matInput required type="number" formControlName="rollNumber"  autocomplete="off">
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>Student No.</mat-label>
+            <input matInput required type="number" formControlName="studentNumber">
+          </mat-form-field>
+
+          <br>
+
+
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput required type="email" formControlName="email" autocomplete="off">
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>Skills</mat-label>
+            <input matInput required type="text" formControlName="skills">
+          </mat-form-field>
+
+          <br>
+
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>Phone No.</mat-label>
+            <input matInput required type="number" formControlName="phoneNumber">
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>Whatsapp No.</mat-label>
+            <input matInput required type="number" formControlName="whatsappNumber">
+          </mat-form-field>
+
+          <br>
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>Behance link</mat-label>
+            <input matInput type="text" formControlName="behance">
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>Github Link</mat-label>
+            <input matInput type="text" formControlName="github">
+          </mat-form-field>
+          <br>
+          <div style="text-align: -webkit-center;">
+            <re-captcha
+              (resolved)="resolved($event)"
+              formControlName="recaptchaReactive"
+              siteKey="6LcsZbsZAAAAAMuahf8xNowvq0ds90IXtUMtgymH"
+            >
+            </re-captcha>
+          </div>
+          <br>
+
+          <button  class="btn btn-primary align-self-center" type="submit"style="self-align: -webkit-center;">SUBMIT</button>
+
+
+        </form>
+      </div>
     </div>
   </div>
 </section>

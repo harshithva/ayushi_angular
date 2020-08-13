@@ -22,6 +22,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { OurTeamComponent } from "./our-team/our-team.component";
 import { PortfolioPageComponent } from "./portfolio-page/portfolio-page.component";
 import { RegistrationPageComponent } from "./registration-page/registration-page.component";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule, MatFormFieldModule, MatInputModule, MatRadioModule, MatSelectModule} from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +52,12 @@ import { RegistrationPageComponent } from "./registration-page/registration-page
     ReactiveFormsModule,
     RecaptchaModule,
     RecaptchaFormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatRadioModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent],
