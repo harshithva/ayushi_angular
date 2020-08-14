@@ -25,7 +25,7 @@ export class RegistrationPageComponent implements OnInit {
     whatsappNumber: new FormControl("", Validators.pattern("^[0-9]*$")),
     email: new FormControl(
       "",
-      Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$")
+      Validators.pattern("^[a-z0-9._%+-]+@akgec.ac.in$")
     ),
     skills: new FormControl("", Validators.required),
     github: new FormControl(""),
