@@ -17,17 +17,15 @@
         class="col-12 text-center my-5 font-weight-bold"
         style="color: #2788cc;"
       >
-        <h1 style="backdrop-filter: blur(5px);">REGISTRATION</h1>
+        <h1 style="backdrop-filter: blur(5px);">RELOAD '20</h1>
+        <p style="backdrop-filter: blur(5px);">Registration</p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-6 py-2">
         <img
-          src="../../assets/poster.jpg"
-          style="
-            width: inherit;
-            box-shadow: 0 4px 8px 0 #fff, 0 6px 10px 0 #000;
-          "
+          src="../../assets/reload.svg"
+          style="width: inherit; backdrop-filter: blur(5px);"
         />
       </div>
       <div
@@ -39,99 +37,139 @@
           [formGroup]="userprofileForms"
           (ngSubmit)="onSubmit()"
         >
-          <mat-form-field appearance="outline" class="example-full-width">
-            <mat-label>Name</mat-label>
-            <input
-              matInput
-              required
-              type="text"
-              formControlName="name"
-              autocomplete="off"
-            />
-          </mat-form-field>
-          <mat-form-field appearance="outline" class="example-full-width">
-            <mat-label>Branch</mat-label>
-            <mat-select formControlName="branch">
-              <mat-option value="CS">CS</mat-option>
-              <mat-option value="CSE">CSE</mat-option>
-              <mat-option value="IT">IT</mat-option>
-              <mat-option value="CS/IT">CS/IT</mat-option>
-              <mat-option value="ECE">ECE</mat-option>
-              <mat-option value="OTHER">OTHER</mat-option>
-            </mat-select>
-          </mat-form-field>
-          <br />
-          <mat-form-field appearance="outline" class="example-full-width">
-            <mat-label>Roll No</mat-label>
-            <input
-              matInput
-              required
-              type="number"
-              formControlName="rollNumber"
-              autocomplete="off"
-            />
-          </mat-form-field>
-          <mat-form-field appearance="outline" class="example-full-width">
-            <mat-label>Student No.</mat-label>
-            <input
-              matInput
-              required
-              type="number"
-              formControlName="studentNumber"
-            />
-          </mat-form-field>
-          <br />
-          <mat-form-field appearance="outline" class="example-full-width">
-            <mat-label>Email</mat-label>
-            <input
-              matInput
-              required
-              type="email"
-              formControlName="email"
-              autocomplete="off"
-            />
-          </mat-form-field>
-          <mat-form-field appearance="outline" class="example-full-width">
-            <mat-label>Skills</mat-label>
-            <input matInput required type="text" formControlName="skills" />
-          </mat-form-field>
-          <br />
-          <mat-form-field appearance="outline" class="example-full-width">
-            <mat-label>Phone No.</mat-label>
-            <input
-              matInput
-              required
-              type="number"
-              formControlName="phoneNumber"
-            />
-          </mat-form-field>
-          <mat-form-field appearance="outline" class="example-full-width">
-            <mat-label>Whatsapp No.</mat-label>
-            <input
-              matInput
-              required
-              type="number"
-              formControlName="whatsappNumber"
-            />
-          </mat-form-field>
-          <br />
-          <mat-form-field appearance="outline" class="example-full-width">
-            <mat-label>Behance link</mat-label>
-            <input matInput type="text" formControlName="behance" />
-          </mat-form-field>
-          <mat-form-field appearance="outline" class="example-full-width">
-            <mat-label>Github Link</mat-label>
-            <input matInput type="text" formControlName="github" />
-          </mat-form-field>
-          <br />
-          <div style="text-align: -webkit-center;">
-            <re-captcha
-              (resolved)="resolved($event)"
-              formControlName="recaptchaReactive"
-              siteKey="6LcsZbsZAAAAAMuahf8xNowvq0ds90IXtUMtgymH"
-            >
-            </re-captcha>
+          <div class="row">
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input
+                  matInput
+                  type="text"
+                  formControlName="name"
+                  autocomplete="off"
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>BRANCH</mat-label>
+                <mat-select formControlName="branch">
+                  <mat-option value="CS">CS</mat-option>
+                  <mat-option value="CSE">CSE</mat-option>
+                  <mat-option value="IT">IT</mat-option>
+                  <mat-option value="CS/IT">CS/IT</mat-option>
+                  <mat-option value="ECE">ECE</mat-option>
+                  <mat-option value="OTHER">OTHER</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
           </div>
+          <div class="row">
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Roll No</mat-label>
+                <input
+                  matInput
+                  type="number"
+                  formControlName="rollNumber"
+                  autocomplete="off"
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Student No.</mat-label>
+                <input
+                  matInput
+                  type="number"
+                  autocomplete="off"
+                  formControlName="studentNumber"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>College Email</mat-label>
+                <input
+                  matInput
+                  type="email"
+                  formControlName="email"
+                  autocomplete="off"
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Skills</mat-label>
+                <input
+                  matInput
+                  type="text"
+                  autocomplete="off"
+                  formControlName="skills"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Whatsapp No.</mat-label>
+                <input
+                  matInput
+                  type="number"
+                  autocomplete="off"
+                  formControlName="whatsappNumber"
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Phone No.</mat-label>
+                <input
+                  matInput
+                  type="number"
+                  autocomplete="off"
+                  formControlName="phoneNumber"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Github Link</mat-label>
+                <input
+                  matInput
+                  type="text"
+                  autocomplete="off"
+                  formControlName="github"
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Behance link</mat-label>
+                <input
+                  matInput
+                  type="text"
+                  autocomplete="off"
+                  formControlName="behance"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12" style="text-align: -webkit-center;">
+              <re-captcha
+                (resolved)="resolved($event)"
+                formControlName="recaptchaReactive"
+                siteKey="6LcsZbsZAAAAAMuahf8xNowvq0ds90IXtUMtgymH"
+              >
+              </re-captcha>
+            </div>
+          </div>
+          
           <br />
           <button
             class="btn btn-primary align-self-center"

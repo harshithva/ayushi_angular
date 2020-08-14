@@ -7,9 +7,9 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 declare var particlesJS: any;
 
 @Component({
-  selector: 'app-registration-page',
-  templateUrl: './registration-page.component.html',
-  styleUrls: ['./registration-page.component.css']
+  selector: "app-registration-page",
+  templateUrl: "./registration-page.component.html",
+  styleUrls: ["./registration-page.component.css"],
 })
 export class RegistrationPageComponent implements OnInit {
 
@@ -17,13 +17,13 @@ export class RegistrationPageComponent implements OnInit {
                   private router: Router,
     ) { }
   userprofileForms = new FormGroup({
-    name: new FormControl('', Validators.pattern('^[a-zA-Z]*$')),
-    phoneNumber: new FormControl('', Validators.pattern('^[0-9]*$')),
-    rollNumber: new FormControl('', Validators.required),
+    name: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z]*$')]),
+    phoneNumber: new FormControl('', [Validators.required, Validators.pattern('^[0-9]{10,10}$')]),
+    rollNumber: new FormControl('', [Validators.required, Validators.pattern('^[0-9]{13,13}$')]),
     branch: new FormControl('', Validators.required),
-    studentNumber: new FormControl('', Validators.required),
-    whatsappNumber: new FormControl('', Validators.pattern('^[0-9]*$')),
-    email: new FormControl('', Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$')),
+    studentNumber: new FormControl('', [Validators.required, Validators.required]),
+    whatsappNumber: new FormControl('', [Validators.required, Validators.pattern('^[0-9]{10,10}$')]),
+    email: new FormControl('', [Validators.required,Validators.pattern('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$')]),
     skills: new FormControl('', Validators.required),
     github: new FormControl('', ),
     behance: new FormControl('', ),
@@ -47,18 +47,19 @@ export class RegistrationPageComponent implements OnInit {
     if (this.userprofileForms.valid) {
       this._contactService.registration(this.userprofileForms.value).subscribe(
         (success) => {
-          console.log("Form Submitted");
-          console.log(success);
-          window.alert("Form submitted successfully");
-          this.userprofileForms.reset();
-          this.router.navigate(['/', 'register']);
+          if (success.status == 1) {
+            window.alert("Form submitted successfully");
+            window.location.href='./';
+          } else {
+            window.alert(success.error);
+            this.userprofileForms.reset();
+          }
         },
         (error) => {
           console.log(error);
-          window.alert("Some error occured. Please try again later.")
+          window.alert("Some error occured. Please try again later.");
         }
       );
     }
   }
-
 }
