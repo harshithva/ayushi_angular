@@ -1,8 +1,8 @@
-import { Router } from '@angular/router';
-import { ContactUsService } from './../footer/contactus.service';
-import { Component, OnInit } from '@angular/core';
-import { ParticlesConfig } from '../landing/particles';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from "@angular/router";
+import { ContactUsService } from "./../footer/contactus.service";
+import { Component, OnInit } from "@angular/core";
+import { ParticlesConfig } from "../landing/particles";
+import { FormControl, FormGroup, Validators } from "@angular/forms";
 
 declare var particlesJS: any;
 
@@ -12,22 +12,42 @@ declare var particlesJS: any;
   styleUrls: ["./registration-page.component.css"],
 })
 export class RegistrationPageComponent implements OnInit {
-
-  constructor(    private _contactService: ContactUsService,
-                  private router: Router,
-    ) { }
+  constructor(
+    private _contactService: ContactUsService,
+    private router: Router
+  ) {}
   userprofileForms = new FormGroup({
-    name: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z]*$')]),
-    phoneNumber: new FormControl('', [Validators.required, Validators.pattern('^[0-9]{10,10}$')]),
-    rollNumber: new FormControl('', [Validators.required, Validators.pattern('^[0-9]{13,13}$')]),
-    branch: new FormControl('', Validators.required),
-    studentNumber: new FormControl('', [Validators.required, Validators.required]),
-    whatsappNumber: new FormControl('', [Validators.required, Validators.pattern('^[0-9]{10,10}$')]),
-    email: new FormControl('', [Validators.required,Validators.pattern('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$')]),
-    skills: new FormControl('', Validators.required),
-    github: new FormControl('', ),
-    behance: new FormControl('', ),
-    recaptchaReactive: new FormControl('${captchaResponse}', Validators.required),
+    name: new FormControl("", [
+      Validators.required,
+      Validators.pattern("^[a-zA-Z ]*$"),
+    ]),
+    phoneNumber: new FormControl("", [
+      Validators.required,
+      Validators.pattern("^[0-9]{10,10}$"),
+    ]),
+    rollNumber: new FormControl("", [
+      Validators.required,
+      Validators.pattern("^[0-9]{13,13}$"),
+    ]),
+    branch: new FormControl("", Validators.required),
+    studentNumber: new FormControl("", [
+      Validators.required,
+    ]),
+    whatsappNumber: new FormControl("", [
+      Validators.required,
+      Validators.pattern("^[0-9]{10,10}$"),
+    ]),
+    email: new FormControl("", [
+      Validators.required,
+      Validators.pattern("^[a-zA-Z0-9._%+-]+@akgec.ac.in$"),
+    ]),
+    skills: new FormControl("", Validators.required),
+    github: new FormControl(""),
+    behance: new FormControl(""),
+    recaptchaReactive: new FormControl(
+      "${captchaResponse}",
+      Validators.required
+    ),
   });
 
   ngOnInit() {
@@ -49,7 +69,7 @@ export class RegistrationPageComponent implements OnInit {
         (success) => {
           if (success.status == 1) {
             window.alert("Form submitted successfully");
-            window.location.href='./';
+            window.location.href = "./";
           } else {
             window.alert(success.error);
             this.userprofileForms.reset();
