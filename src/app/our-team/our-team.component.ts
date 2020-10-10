@@ -13,7 +13,8 @@ declare var particlesJS: any;
 export class OurTeamComponent implements OnInit {
   constructor(private apiService: ApiService) {}
   results: Comments[];
-
+  alumni: Comments[];
+  
   ngOnInit(): void {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
@@ -21,6 +22,10 @@ export class OurTeamComponent implements OnInit {
       this.results = data.data;
       console.log(this.results);
     });
+     
+    this.alumni = this.apiService.Alumni;
+    console.log(this.alumni);
+
     particlesJS("particles-js", ParticlesConfig, function () {
       console.log("callback - particles.js config loaded");
     });

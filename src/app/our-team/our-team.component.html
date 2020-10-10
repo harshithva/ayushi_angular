@@ -1,26 +1,19 @@
 <app-nav></app-nav>
 <section class="row">
-  <div
-    id="particles-js"
-    style="
+  <div id="particles-js" style="
       position: absolute;
       margin-top: -2rem;
       margin-left: -2rem;
       height: 180vh !important;
       z-index: -1;
-    "
-    class="w-100 header-particles"
-  ></div>
+    " class="w-100 header-particles"></div>
   <div class="container" style="text-align: -webkit-center;">
     <div class="row">
-      <div
-        class="col-12 text-center my-5 font-weight-bold"
-        style="color: #2788cc;"
-      >
+      <div class="col-12 text-center my-5 font-weight-bold" style="color: #2788cc;">
         <h1 style="backdrop-filter: blur(5px);">OUR TEAM</h1>
       </div>
     </div>
-    <div class="card1" *ngFor="let com of results">
+    <div class="card1" *ngFor="let com of results | slice:3">
       <div class="front">
         <img src="{{ com.Image }}" style="width: 100%; height: 100%;" />
       </div>
@@ -31,21 +24,60 @@
             <span>{{ com.Tech }}</span>
           </h6>
           <div class="icons">
-            <a *ngIf="com.Facebook" href="{{ com.Facebook }}" target="_blank"
-              ><div class="fa fa-facebook"></div
-            ></a>
-            <a *ngIf="com.Insta" href="{{ com.Insta }}" target="_blank"
-              ><div class="fa fa-instagram"></div
-            ></a>
-            <a *ngIf="com.Linkedin" href="{{ com.Linkedin }}" target="_blank"
-              ><div class="fa fa-linkedin"></div
-            ></a>
-            <a *ngIf="com.Github" href="{{ com.Github }}" target="_blank"
-              ><div class="fa fa-github"></div
-            ></a>
-            <a *ngIf="com.Behance" href="{{ com.Behance }}" target="_blank"
-              ><div class="fa fa-behance"></div
-            ></a>
+            <a *ngIf="com.Facebook" href="{{ com.Facebook }}" target="_blank">
+              <div class="fa fa-facebook"></div>
+            </a>
+            <a *ngIf="com.Insta" href="{{ com.Insta }}" target="_blank">
+              <div class="fa fa-instagram"></div>
+            </a>
+            <a *ngIf="com.Linkedin" href="{{ com.Linkedin }}" target="_blank">
+              <div class="fa fa-linkedin"></div>
+            </a>
+            <a *ngIf="com.Github" href="{{ com.Github }}" target="_blank">
+              <div class="fa fa-github"></div>
+            </a>
+            <a *ngIf="com.Behance" href="{{ com.Behance }}" target="_blank">
+              <div class="fa fa-behance"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container" style="text-align: -webkit-center;">
+    <div class="row">
+      <div class="col-12 text-center my-5 font-weight-bold" style="color: #2788cc;">
+        <h1 style="backdrop-filter: blur(5px);">Alumni</h1>
+      </div>
+    </div>
+    <div class="card1" *ngFor="let data of alumni" >
+      <div class="front">
+        <img src="{{ data.Image }}" style="width: 100%; height: 100%;" />
+      </div>
+      <div class="back">
+        <div class="details">
+          <h4>{{ data.Name }}</h4>
+          <h6>
+            <span>{{ data.Tech }}</span>
+          </h6>
+          <div class="icons">
+            <a *ngIf="data.Facebook" href="{{ data.Facebook }}" target="_blank">
+              <div class="fa fa-facebook"></div>
+            </a>
+            <a *ngIf="data.Insta" href="{{ data.Insta }}" target="_blank">
+              <div class="fa fa-instagram"></div>
+            </a>
+            <a *ngIf="data.Linkedin" href="{{ data.Linkedin }}" target="_blank">
+              <div class="fa fa-linkedin"></div>
+            </a>
+            <a *ngIf="data.Github" href="{{ data.Github }}" target="_blank">
+              <div class="fa fa-github"></div>
+            </a>
+            <a *ngIf="data.Behance" href="{{ data.Behance }}" target="_blank">
+              <div class="fa fa-behance"></div>
+            </a>
           </div>
         </div>
       </div>
