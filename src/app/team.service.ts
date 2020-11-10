@@ -73,18 +73,7 @@ export class TeamService {
       "Name": "Anshul Srivastava", 
       "Tech": "Web Developer", 
       "Year": 4
-    }, 
-    {
-      "Behance": "", 
-      "Facebook": "", 
-      "Github": "https://github.com/spazerzex", 
-      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/AntrikshGoel.jpeg", 
-      "Insta": "https://instagram.com/antrikshgoel?igshid=1f35vtig4j7zu", 
-      "Linkedin": "https://www.linkedin.com/in/antriksh-goel-82b9ba150", 
-      "Name": "Antriksh Goel", 
-      "Tech": "Application Developer", 
-      "Year": 4
-    }, 
+    },  
     {
       "Behance": "", 
       "Facebook": "https://m.facebook.com/ashish.varshney.94651?ref=bookmarks", 
@@ -216,18 +205,7 @@ export class TeamService {
       "Name": "Vishal Negi", 
       "Tech": "UI/UX Designer", 
       "Year": 4
-    }, 
-    {
-      "Behance": "", 
-      "Facebook": "", 
-      "Github": "", 
-      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/AmanSrivastav.jpg", 
-      "Insta": "", 
-      "Linkedin": "", 
-      "Name": "Aman Srivastav", 
-      "Tech": "Application Developer", 
-      "Year": 3
-    }, 
+    },
     {
       "Behance": "", 
       "Facebook": "", 
