@@ -337,6 +337,226 @@ export class TeamService {
       "Name": "Vishesh Dhawan", 
       "Tech": "Web Developer", 
       "Year": 3
+    }, 
+    {
+      "Behance": "", 
+      "Facebook": "https://www.facebook.com/aniket.kesarwani.37", 
+      "Github": "https://github.com/aniket5459", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/AniketKesarwani.jpg", 
+      "Insta": "https://www.instagram.com/aniket._.kesarwani.007/", 
+      "Linkedin": "https://www.linkedin.com/in/aniket-kesarwani-58709315b/", 
+      "Name": "Aniket Kesarwani", 
+      "Tech": "Web Developer", 
+      "Year": 2
+    }, 
+    {
+      "Behance": "https://www.behance.net/apoorvmaheshw", 
+      "Facebook": "https://m.facebook.com/apoorv.maheshwari.77", 
+      "Github": "https://github.com/Apoorv-cloud", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/ApoorvMaheshwari.jpg", 
+      "Insta": "https://instagram.com/maheshwari__apoorv?igshid=35jid2u2ui83", 
+      "Linkedin": "https://www.linkedin.com/in/apoorv-maheshwari-6689791aa", 
+      "Name": "Apoorv Maheshwari", 
+      "Tech": "Application Developer", 
+      "Year": 2
+    }, 
+    {
+      "Behance": "", 
+      "Facebook": "https://www.facebook.com/archit.garg.106/", 
+      "Github": "https://github.com/architgarg13", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/ArchitGarg.jpg", 
+      "Insta": "https://www.instagram.com/archit_0308/", 
+      "Linkedin": "https://www.linkedin.com/in/archit-garg-904791119", 
+      "Name": "Archit Garg", 
+      "Tech": "Web Developer", 
+      "Year": 2
+    }, 
+    {
+      "Behance": "", 
+      "Facebook": "https://www.facebook.com/ayush.mohan.961", 
+      "Github": "https://github.com/Ayush-Mohan", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/AyushMohan.jpg", 
+      "Insta": "https://www.instagram.com/mohan_ayush_007", 
+      "Linkedin": "https://www.linkedin.com/in/ayush-mohan-74aa921ba", 
+      "Name": "Ayush Mohan", 
+      "Tech": "Application Developer", 
+      "Year": 2
+    }, 
+    {
+      "Behance": "", 
+      "Facebook": "https://www.facebook.com/ayush.rawat.3950", 
+      "Github": "https://github.com/AyushRawat-17", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/AyushRawat.jpg", 
+      "Insta": "https://www.instagram.com/rawat_ayush17/", 
+      "Linkedin": "https://www.linkedin.com/in/ayush-rawat-a61828196/", 
+      "Name": "Ayush Rawat", 
+      "Tech": "Web Developer", 
+      "Year": 2
+    }, 
+    {
+      "Behance": "", 
+      "Facebook": "", 
+      "Github": "https://www.github.com/ayushisaxena19", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/AyushiSaxena.jpg", 
+      "Insta": "https://www.instagram.com/_ayushisaxena19/", 
+      "Linkedin": "https://www.linkedin.com/in/ayushi-saxena-9b50891b9", 
+      "Name": "Ayushi Saxena", 
+      "Tech": "Web Developer", 
+      "Year": 2
+    }, 
+    {
+      "Behance": "", 
+      "Facebook": "https://m.facebook.com/muskan.bansal.73932?ref=bookmarks", 
+      "Github": "https://github.com/muskanb1408", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/MuskanBansal.jpg", 
+      "Insta": "https://instagram.com/muskanb1408?igshid=1vr0t6s8m5vt0", 
+      "Linkedin": "https://www.linkedin.com/in/muskan-bansal-8ba0981a8", 
+      "Name": "Muskan Bansal", 
+      "Tech": "Web Developer", 
+      "Year": 2
+    }, 
+    {
+      "Behance": "", 
+      "Facebook": "https://www.facebook.com/priya.karnwal.3954", 
+      "Github": "https://github.com/karnwalpriya", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/PriyaKarnwal.jpg", 
+      "Insta": " https://www.instagram.com/priya._.10/", 
+      "Linkedin": "https://www.linkedin.com/in/priya-karnwal-5a28b11b1", 
+      "Name": "Priya Karnwal", 
+      "Tech": "Web Developer", 
+      "Year": 2
+    }, 
+    {
+      "Behance": "", 
+      "Facebook": "", 
+      "Github": "https://github.com/Pulkit663", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/PulkitTaneja.jpg", 
+      "Insta": "https://instagram.com/pulkit6005?igshid=10uwoy4eh5yb3", 
+      "Linkedin": "https://www.linkedin.com/in/pulkit-taneja-5537521b9/", 
+      "Name": "Pulkit Taneja ", 
+      "Tech": "Web Developer", 
+      "Year": 2
+    }, 
+    {
+      "Behance": "https://www.behance.net/rupalmathur1", 
+      "Facebook": "https://www.facebook.com/rupal.mathur.35", 
+      "Github": "https://github.com/rupal-mathur1", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/RupalMathur.jpg", 
+      "Insta": "https://www.instagram.com/rupalmathur001?r=nametag", 
+      "Linkedin": "https://www.linkedin.com/in/rupal-mathur-695a961ba", 
+      "Name": "Rupal Mathur", 
+      "Tech": "Application Developer", 
+      "Year": 2
+    }, 
+    {
+      "Behance": "", 
+      "Facebook": "https://www.facebook.com/rydam.agrawal", 
+      "Github": "https://github.com/rydam1403", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/RydamAgrawal.jpg", 
+      "Insta": "https://instagram.com/rydam44?igshid=1gfnfom9axjsb", 
+      "Linkedin": "https://www.linkedin.com/in/rydam-agrawal-44a1921a8", 
+      "Name": "Rydam Agrawal ", 
+      "Tech": "Application Developer", 
+      "Year": 2
+    }, 
+    {
+      "Behance": "https://www.behance.net/saatvikrawat", 
+      "Facebook": "https://www.facebook.com/saatvik.rawat", 
+      "Github": "https://github.com/Saatvik14", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/SaatvikRawat.jpg", 
+      "Insta": "https://www.instagram.com/saatvik_14/", 
+      "Linkedin": "https://www.linkedin.com/in/saatvik-rawat-316042199/", 
+      "Name": "Saatvik Rawat", 
+      "Tech": "Application Developer", 
+      "Year": 2
+    }, 
+    {
+      "Behance": "", 
+      "Facebook": "", 
+      "Github": "https://github.com/SammyStark", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/SamkitJain.jpg", 
+      "Insta": "https://www.instagram.com/samkit._.jain/", 
+      "Linkedin": "https://www.linkedin.com/in/samkit-jain-a51b9a1aa/", 
+      "Name": "Samkit Jain", 
+      "Tech": "Application Developer", 
+      "Year": 2
+    }, 
+    {
+      "Behance": "", 
+      "Facebook": "", 
+      "Github": "  https://github.com/Sejal260", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/SejalSaraogi.jpg", 
+      "Insta": "", 
+      "Linkedin": "https://www.linkedin.com/in/sejal-saraogi-7ba7651ba  ", 
+      "Name": "Sejal Saraogi", 
+      "Tech": "Web Developer", 
+      "Year": 2
+    }, 
+    {
+      "Behance": "", 
+      "Facebook": "", 
+      "Github": "https://github.com/stuti1402", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/StutiGoyal.jpg", 
+      "Insta": "https://www.instagram.com/stuti1_4/", 
+      "Linkedin": "https://www.linkedin.com/in/stuti-goyal-a66aa61ba/", 
+      "Name": "Stuti Goyal", 
+      "Tech": "Application Developer", 
+      "Year": 2
+    }, 
+    {
+      "Behance": "", 
+      "Facebook": "https://www.facebook.com/", 
+      "Github": "https://github.com/sudhanshu19s", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/SudhanshuShrotriya.jpg", 
+      "Insta": "https://www.instagram.com/", 
+      "Linkedin": "https://www.linkedin.com/feed/", 
+      "Name": "sudhanshu shrotriya", 
+      "Tech": "Web Developer", 
+      "Year": 2
+    }, 
+    {
+      "Behance": "", 
+      "Facebook": "https://www.facebook.com/suryanshu.verma.5", 
+      "Github": "https://github.com/suryanshuverma", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/SuryanshuVerma.jpg", 
+      "Insta": "https://www.instagram.com/suryanshu_verma_/", 
+      "Linkedin": "https://www.linkedin.com/in/suryanshu-verma-7a9aa31ba", 
+      "Name": "Suryanshu Verma", 
+      "Tech": "Web Developer", 
+      "Year": 2
+    }, 
+    {
+      "Behance": "", 
+      "Facebook": "https://m.facebook.com/profile.php", 
+      "Github": "https://github.com/VaibhavRaj-lab/BRL-project-Vaibhav", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/VaibhavRaj.jpg", 
+      "Insta": "https://www.instagram.com/v_ai_bhav_raj/", 
+      "Linkedin": "https://www.linkedin.com/in/vaibhav-raj-416a661ba", 
+      "Name": "Vaibhav Raj ", 
+      "Tech": "Web Developer", 
+      "Year": 2
+    }, 
+    {
+      "Behance": "", 
+      "Facebook": "", 
+      "Github": "https://github.com/singh15varun", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/VarunPratapSingh.jpg", 
+      "Insta": "https://www.instagram.com/singh15varun/", 
+      "Linkedin": "https://www.linkedin.com/in/varun-pratap-singh-4a49451b0", 
+      "Name": "Varun Pratap Singh", 
+      "Tech": "Web Developer", 
+      "Year": 2
+    }, 
+    {
+      "Behance": "", 
+      "Facebook": "https://www.facebook.com/vikram.rai.35513/", 
+      "Github": "https://github.com/Vikramrai14", 
+      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/VikramAdityaRai.jpg", 
+      "Insta": "https://www.instagram.com/vikram_aditya_rai/", 
+      "Linkedin": "https://www.linkedin.com/in/vikram-aditya-rai-a07a931ba/", 
+      "Name": "Vikram Aditya Rai", 
+      "Tech": "Web Developer", 
+      "Year": 2
     }
   ]
 }
