@@ -404,17 +404,17 @@ export class TeamService {
       "Tech": "Web Developer", 
       "Year": 2
     }, 
-    {
-      "Behance": "", 
-      "Facebook": "", 
-      "Github": "https://github.com/Pulkit663", 
-      "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/PulkitTaneja.jpg", 
-      "Insta": "https://instagram.com/pulkit6005?igshid=10uwoy4eh5yb3", 
-      "Linkedin": "https://www.linkedin.com/in/pulkit-taneja-5537521b9/", 
-      "Name": "Pulkit Taneja ", 
-      "Tech": "Web Developer", 
-      "Year": 2
-    }, 
+    // {
+    //   "Behance": "", 
+    //   "Facebook": "", 
+    //   "Github": "https://github.com/Pulkit663", 
+    //   "Image": "https://raw.githubusercontent.com/Blockchain-Research-Lab/brl-website-assets/master/PulkitTaneja.jpg", 
+    //   "Insta": "https://instagram.com/pulkit6005?igshid=10uwoy4eh5yb3", 
+    //   "Linkedin": "https://www.linkedin.com/in/pulkit-taneja-5537521b9/", 
+    //   "Name": "Pulkit Taneja ", 
+    //   "Tech": "Web Developer", 
+    //   "Year": 2
+    // }, 
     {
       "Behance": "https://www.behance.net/rupalmathur1", 
       "Facebook": "https://www.facebook.com/rupal.mathur.35", 
